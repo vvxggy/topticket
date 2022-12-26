@@ -1,0 +1,796 @@
+// colores
+$color-1: #65B791;
+$color-2: #000000;
+$color-3: #CFCFCF;
+$color-4: #F1F1F1;
+$color-5: #FFFFFF;
+
+//colores sectores
+$color-6:#FF3F66;
+$color-7:#FFAC63;
+$color-8:#FF7EC3;
+$color-9:#E482FF;
+$color-10:#FFA835;
+$color-11: #FFE656;
+$color-12: #8AD976;
+$color-13: #17B9D2;
+$color-14: #5B56FF;
+
+// tipografía
+$font: 'Poppins', sans-serif;
+
+//tamaño
+$size-1: 100%; //13px
+$size-2: 130.76%; //17px
+$size-3: 192.30%; // 25 px
+$size-4: 269.23%; //35 px
+$size-5: 346.15%; //45 px
+
+//peso
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+
+// Atributos del botón 
+@mixin boton {
+    font-weight:$font-medium;
+    font-size:$size-1 ;
+    color:$color-5;
+    background-color: $color-1;
+    text-decoration: none;
+    border-color: $color-1;
+}
+
+*{
+    box-sizing: border-box;
+  }
+body{
+    font-family: $font;
+    font-size: 13px;
+}
+// Home
+//Nav
+.div-nav{
+    background-color: $color-1;
+     ul{
+        list-style:none;
+        font-weight:$font-semibold ;
+        font-size:$size-1;
+     }
+     li{
+        a:hover{
+            color: $color-2!important;
+        }
+    }
+}
+.navegacion{
+        background-color: $color-2!important;
+        font-size:$size-2;
+        font-weight:$font-semibold;
+    ul{
+        li{
+            a:hover{
+                color: $color-1!important;
+            }
+        }
+    }
+    .form-control{
+        color: $color-2;
+    }
+    .navbar-dark{
+        background-color: $color-2;
+        .link-musica{
+            color: $color-1!important;
+        }
+    }
+}
+// Main
+.btn-outline-success{
+    @include boton;
+}
+.btn-outline-success:active{
+    background-color: $color-5!important;
+    color: $color-2!important;
+}
+.btn-outline-success1{
+    @include boton;
+}
+.btn-outline-success1:active{
+    background-color: $color-2!important;
+    color: $color-5!important;
+}
+.btn-outline-success:hover{
+    background-color: $color-5;
+    color: $color-2;
+}
+.btn-outline-success1:hover{
+    background-color: $color-2;
+    color: $color-5;
+}
+// Secciones del home
+.sec{
+    h2{
+        font-weight: $font-medium;
+        font-size: $size-4;
+        color:$color-2 ;
+    }
+    .card{
+        width: 18rem;
+    }
+    .card-title{
+        font-weight: $font-medium;
+        font-size: $size-3;
+        color:$color-1;
+
+    }
+    .icon{
+        color:$color-1;
+        font-size: 30px;
+    }
+    .icon2{
+        color:$color-1;
+        font-size: 20px;
+    }
+    .icon2:hover{
+        color: $color-5;
+        cursor: pointer;
+    }
+    .card-body{
+        background-color: $color-2;
+        border-radius: 0px 0px 20px 20px ;
+    }
+    .card-img-top{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .card-text{
+        font-size: $size-2;
+        font-weight:$font-regular ;
+        color: $color-5;
+    } 
+}
+// Música
+.musica{
+    .barra{
+        font-size: $size-2;
+        border-radius: 25px;
+        background-color: $color-1 !important;
+        width: 40%!important;
+        .disabled{
+            font-weight: $font-semibold;
+        }
+       .nav-link{
+            color: $color-5 !important ;
+        }
+        a:hover{
+            color: $color-2 !important;
+    
+        }
+    }
+    .pricing {
+        float: left !important;
+      }
+    
+    .card{
+        background-color: $color-2;
+        border-radius: 22px;
+    }
+
+    .price {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+    .price:hover{
+        box-shadow: 0 1rem 3rem rgba($color-2, .175);
+        transform:scale(1.08);
+        cursor: pointer;
+    }
+    .card-title{
+        font-weight: $font-medium;
+        font-size: $size-3;
+        color:$color-1;
+    }
+    .icon2{
+        color:$color-1;
+        font-size: 20px;
+    }
+
+    .card-img-top{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .card-text{
+        font-size: $size-2;
+        font-weight:$font-regular;
+        color: $color-5;
+    }
+    
+    .icon2:hover{
+        color: $color-5;
+    }
+    .navigation{
+        color: $color-1 !important;
+    }
+    .pagination li a {
+        color: $color-2;
+        font-size: $size-2;
+        font-weight: $font-semibold;
+        padding: 3px 10px;
+        border-radius: 50%;
+        list-style:none;
+        -webkit-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+      }
+      .pagination li a.active {
+        background-color: $color-1;
+        color: $color-5;
+        padding: 3px 12px 3px 12px;
+      }
+      .pagination li .number:hover:not(.active) {
+        background-color: $color-4;
+      } 
+      
+}
+// Offcanva
+.offcanvas{
+    
+    background-color:$color-4;
+
+    h3{
+        font-size: $size-2;
+    }
+    .rounded-circle{
+        width: 30px;
+        height: 30px;
+        background-color: $color-1;
+        color: $color-5;
+    }
+    .encabezado{
+        background-color: $color-2;
+        border-radius:20px 20px 0px 0px;
+        color: $color-5;
+        font-size: $size-1;
+            font-weight: $font-regular;
+        h3{
+            color: $color-1;
+            font-size: $size-3;
+            font-weight: $font-semibold;
+        }
+        i{
+            color: $color-1;
+        }
+    }
+    .borde-start{
+        border-left: 30px solid $color-12;
+        height: 20vh;
+
+        .fa-trash-can:hover{
+            color: $color-1 !important;
+            cursor: pointer;
+        }
+        
+        h4{
+            font-size: $size-2;
+            font-weight: $font-regular;
+
+        }
+        li{
+            list-style: none;
+            font-size:$size-1 ;
+        }
+        span{
+            font-size: $size-2;
+            font-weight: $font-medium;
+        }
+    }
+    .card-b{
+        border-radius: 0px 0px 20px 20px;
+        border: 0.3px solid $color-5;
+    }
+    .borde-start1{
+        border-radius: 0px 0px 0px 20px;
+    }
+    .mx-auto{
+        span{
+            font-size: $size-2;
+            font-weight: $font-semibold;
+        }
+    }
+}
+// Portada
+.sec-1{
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    i{
+        color: $color-1;
+        font-size: $size-4;
+    }
+    .altura-row{
+        height: 55vh;
+        margin-left: 3%;
+    }
+    h1{
+        color: $color-5;
+        font-size: $size-5;
+        font-weight: $font-semibold;
+    }
+    h2{
+        color: $color-5;
+        font-size: $size-4;
+        font-weight: $font-medium;
+    }
+    ul{
+
+        li{
+            list-style: none;
+            color: $color-5;
+            i{
+                color: $color-1;
+                font-size: $size-1;
+            }
+        }
+        li:first-child{
+            i{
+                padding-right: 10px;
+            }
+        }
+        li:last-child{
+            i{
+                padding-right: 11px;
+            }
+        }
+    }
+}
+//Portada Responsive
+.sec-1-2{
+    background-image: url(../img/portada-responsive.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    padding-left: 10%;
+    i{
+        color: $color-1;
+        font-size: $size-4;
+    }
+    h2>span{
+        color: $color-5;
+        font-size: $size-2;
+        font-weight: $font-semibold;
+    }
+    h2{
+        color: $color-5;
+        font-size: $size-4;
+        font-weight: $font-medium;
+    }
+    ul{
+        li{
+            list-style: none;
+            i{
+                color: $color-1;
+                font-size: $size-1;
+            }
+            color: $color-5;
+        }
+        li:first-child{
+            i{
+                padding-right: 6px;
+            }
+        }
+        li:last-child{
+            i{
+                padding-right: 8px;
+            }
+        }
+    }
+}
+//Evento
+.sec-2{
+    height: 100%;
+    .asientos{
+        height: 70vh;
+        .escenario{
+            height: 10vh;
+        }
+        #primeras-filas{
+            background-color: $color-6;
+            color: $color-5;
+            height: 7vh;
+        }
+        #primeras-filas:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #platea-lateral-sur{
+            background-color: $color-9;
+            color: $color-5;
+            height: 35vh;
+        }
+        #platea-lateral-sur:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #platinum{
+            background-color: $color-1;
+            color: $color-5;
+            height: 6vh;
+        }
+        #platinum:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #diamante{
+            a{
+                text-decoration: none;
+                color: $color-5;
+            }
+            background-color: $color-12;
+            color: $color-5;
+            height: 6vh;
+        }
+        #diamante:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #diamante:focus{
+            background-color: $color-2;
+        }
+        #golden{
+            background-color: $color-13;
+            color: $color-5;
+            height: 6vh;
+        }
+        #golden:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #general-sur{
+            background-color: $color-7;
+            color: $color-5;
+            height: 28vh;
+        }
+        #general-sur:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #general-norte{
+            background-color: $color-10;
+            color: $color-5;
+            height: 28vh;
+        }
+        #general-norte:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #general{
+            background-color: $color-8;
+            color: $color-5;
+            height: 28vh;
+        }
+        #general:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #platea-lateral-norte{
+            background-color: $color-11;
+            color: $color-5;
+            height: 35vh;
+        }
+        #platea-lateral-norte:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        #galeria{
+            background-color: $color-14;
+            color: $color-5;
+            height: 7vh;
+        }
+        #galeria:hover{
+            transform:scale(1.009);
+            cursor: pointer;
+            box-shadow: 0 1rem 3rem rgba($color-2, 0.2);
+        }
+        .gris{
+            background-color: #CFCFCF!important;
+        }
+        .gris:hover{
+            cursor:auto!important;
+            transform:scale(1)!important;
+            box-shadow: 0 0rem 0rem rgba(transparent, 0.2)!important;
+        }
+    }
+    .precios{
+        #primero{
+            color: $color-6;
+        }
+        #segundo{
+            color: $color-9;
+        }
+        #tercero{
+            color: $color-1;
+        }
+        #cuarto{
+            color: $color-12;
+        }
+        #quinto{
+            color: $color-13;
+        }
+        #sexto{
+            color: $color-11;
+        }
+        #septimo{
+            color: $color-7;
+        }
+        #octavo{
+            color: $color-8;
+        }
+        #noveno{
+            color: $color-10;
+        }
+        #decimo{
+            color: $color-14;
+        }
+        h4{
+            font-weight: $font-medium;
+            font-size: $size-2;
+        }
+        p{
+            font-weight: $font-regular;
+            font-size: $size-2;
+        }
+        .boton-1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                @include boton
+            }
+            a:hover{
+                background-color: $color-2;
+            }
+        }
+    }
+    
+}
+.resumen{
+    .bg-tabla{
+        background-color: $color-4;
+    }
+    .bg-tabla{
+        :last-child{
+            border-top: 0.5px solid $color-3;
+        }
+    }
+    h3{
+        font-weight: $font-regular;
+    }
+    h3>span{
+        font-weight: $font-semibold;
+        font-size: $size-1;
+    }
+    h4{
+        font-weight: $font-regular;
+        font-size: $size-2;
+        background-color: $color-1;
+        color: $color-5;
+    }
+    p{
+        font-size: $size-1;
+        font-weight: $font-regular;
+    }
+    a{
+        @include boton;
+    }
+    a:hover{
+        background-color: $color-2;
+    }
+}
+//Asientos
+.asientos-checkbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    i{
+        color: $color-12;
+    }
+    .concert {
+        margin: 20px auto;
+        max-width: 300px;
+      }
+      ol {
+        list-style :none;
+        padding: 0;
+        margin: 0;
+      }
+      .seats {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;  
+      }
+      .seat {
+        display: flex;
+        flex: 0 0 14.28571428571429%;
+        padding: 5px;
+        position: relative;  
+        
+        input[type=checkbox] {
+          position: absolute;
+          opacity: 0;
+        }
+        input[type=checkbox]:checked {
+          + label {
+            background-color: $color-2; 
+            color: $color-5;     
+          }
+        }
+        input[type=checkbox]:disabled {
+          + label {
+            background-color: $color-3;
+            text-indent: -9999px;
+            overflow: hidden;
+            &:after {
+              content: "";
+              text-indent: 0;
+              position: absolute;
+              top: 4px;
+              left: 50%;
+              transform: translate(-50%, 0%);
+            }
+            &:hover {
+              box-shadow: none;
+              cursor: not-allowed;
+              color: $color-2;
+            }
+          }
+        }
+        label {    
+          display: block;
+          position: relative;    
+          width: 100%;    
+          text-align: center;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1.5rem;
+          padding: 4px 0;
+          background-color: $color-1;
+          border-radius: 20%;
+          &:hover {
+            cursor: pointer;
+            background-color: $color-2;
+            color: $color-5;
+          }
+        }
+      }
+}
+//Validaciión
+.validacion{
+    .borde{
+        border-left: solid 25px $color-12;
+        background-color: $color-4;
+        h2{
+            font-size: $size-4;
+            font-weight: $font-medium;
+        }
+    }
+    .fondo{
+        background-color: $color-4;
+    }
+    h3{
+        font-size: $size-3;
+        font-weight: $font-medium;
+    }
+    label{
+        font-size: $size-1;
+    }
+    input[type=submit]{
+        @include boton
+    }
+    input[type=submit]:hover{
+        background-color: $color-2;
+    }
+    @media only screen and (max-width: 600px) {
+        .borde{
+            border-top: 15px solid $color-12;
+            border-left: 0px solid;
+            h2{
+                margin-top: 10%;
+            }
+        }
+      }
+}
+//Modal
+.login-modal{
+    // modal-content{
+    //     padding: -10%;
+    // }
+    .ventana-modal{
+        background-color: $color-5;
+        i{
+            color: $color-2;
+        }
+        i:hover{
+            color: $color-1;
+        }
+        h2{
+            color: $color-1!important;
+            font-size: $size-4;
+            font-weight: $font-semibold;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input{
+                background-color: $color-4;
+                border: 0;
+                border-radius: 10px;
+                font-weight: $font-regular;
+                font-size: $size-1;
+    
+            }
+            input[type=submit]{
+                background-color: $color-1;
+                border: 0;
+                color: $color-5;
+                padding: 5%;
+            }
+            input[type=submit]:hover{
+                background-color: $color-2;
+            }
+        }
+    }
+}
+//Footer
+footer{
+    background-color: $color-2;
+    color: $color-5;
+    h2{
+        font-weight: $font-medium;
+        font-size: $size-4;
+    }
+    a{
+        i{
+            color: $color-5;
+        }
+        i:hover{
+            color: $color-1;
+        }
+    }
+    ul{
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $color-5;
+            }
+            a:hover{
+                    color: $color-1;
+            }
+        }
+    }
+    .iconos{
+        width: 30%;
+        background-color: red;
+    }
+}
+
+
+
+
+
+

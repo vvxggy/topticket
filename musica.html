@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Música</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cfa19d2789.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <!-- navegador  -->
+    <header>
+      <div class="div-nav container-fluid d-flex">
+        <ul class="container d-flex justify-content-end align-items-center my-0 py-2">
+          <li>
+            <a class="text-uppercase text-white mx-2 text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar
+              <i class="fa-solid fa-user mx-1"></i>
+            </a>
+          </li>
+          <li class="me-5">
+            <a class="text-white" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid navegacion">
+            <div class="container d-flex justify-content-center">
+              <a class="navbar-brand ms-5" href="index.html">
+                <img src="assets/img/logo-topticket.png" alt="Logo de topticket">
+              </a>
+              <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse container" id="navbarTogglerDemo02">
+                <form class="d-flex mx-auto" role="search">
+                  <input class="form-control mx-3 pe-5 ps-3 rounded-pill" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success px-4 rounded-pill" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item">
+                   <a class="nav-link active text-uppercase me-4 link-musica" aria-current="page" href="#">Música</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase me-4" href="#">Teatro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase me-4" href="#">Humor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase me-4" href="#">Deporte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase" href="#">Ferias</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <!-- Foto de artista 1 copiar de ignacio -->
+      <section class="container-fluid sec-1">
+        <div class="container d-md-block d-none">
+            <div class="row align-items-center altura-row">
+                <div class="col-md-4">
+                    <i class="fa-solid fa-music icon"></i>
+                    <h1 class="mb-md-2 mt-md-3">Música</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ut doloribus tenetur impedit voluptatum quae, dolore est accusantium.</p>
+
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="sec-1-2 py-5 py-md-0">
+          <div class="container d-md-none d-block">
+            <div class="row align-items-center altura-row">
+                <div class="col-6">
+                  <i class="fa-solid fa-music icon"></i>
+                  <h2 class="">Música</h2>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ut.</p>
+                </div>
+            </div>
+          </div>
+      </section>
+      <!-- Sección Música -->
+      <section class="musica">
+        <div class="container mt-5">
+          <div class="container d-flex justify-content-center mb-5">
+          <nav class="navbar navbar-expand-lg bg-light w-50 justify-content-center barra">
+            <div class="row">
+              <div class="w-100 d-md-flex align-items-center">
+                <a class="nav-link disabled ms-2 me-3" href="#">Filtrar por</a>
+                  <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-2 me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Fecha
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Enero</a></li>
+                      <li><a class="dropdown-item" href="#">Febrero</a></li>
+                      <li><a class="dropdown-item" href="#">Marzo</a></li>
+                      <li><a class="dropdown-item" href="#">Abril</a></li>
+                      <li><a class="dropdown-item" href="#">Mayo</a></li>
+                      <li><a class="dropdown-item" href="#">Junio</a></li>
+                      <li><a class="dropdown-item" href="#">Julio</a></li>
+                      <li><a class="dropdown-item" href="#">Agosto</a></li>
+                      <li><a class="dropdown-item" href="#">Septiembre</a></li>
+                      <li><a class="dropdown-item" href="#">Octubre</a></li>
+                      <li><a class="dropdown-item" href="#">Noviembre</a></li>
+                      <li><a class="dropdown-item" href="#">Diciembre</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-2 me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Precio
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">$200.000 a más</a></li>
+                      <li><a class="dropdown-item" href="#">$100.000 a $200.000</a></li>
+                      <li><a class="dropdown-item" href="#">$50.000 a $100.000</a></li>
+                      <li><a class="dropdown-item" href="#">$10.000 a $50.000</a></li>
+                      <li><a class="dropdown-item" href="#">$10.000 a menos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ms-2 me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Lugar
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Santiago de Chile</a></li>
+                      <li><a class="dropdown-item" href="#">Valparaíso</a></li>
+                      <li><a class="dropdown-item" href="#">Concepción</a></li>
+                      <li><a class="dropdown-item" href="#">Rancagua</a></li>
+                      <li><a class="dropdown-item" href="#">Antofagasta</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+          <div class="row mb-2 mb-md-5">
+            <div class="col-lg-3 col-sm-6 col-md-4 mx-auto princing my-md-0 mb-5">
+              <div class="card h-100 price border border-white">
+                <img src="assets/img/monica-naranjo.jpg" class="card-img-top" alt="Card de Artista 1">
+                <div class="card-body pb-4 mb-2 ms-1">
+                  <h3 class="card-title mt-3 ms-4">Mónica Naranjo</h3>
+                  <p class="card-text ms-4 mb-2">Mimética Tour</p>
+                  <p class="card-text ms-4">12/01/2023</p>
+                  <div class="d-flex">
+                    <a class="btn btn-outline-success rounded-pill px-4 ms-3 me-5 d-sm-block" href="evento.html" role="button">Ver más</a>
+                    <i class="fa-solid fa-share-from-square me-3 icon2 mt-2"></i>
+                    <i class="fa-solid fa-heart icon2 mt-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-4 mx-auto princing my-md-0 mb-5">
+              <div class="card h-100 price border border-white">
+                <img src="assets/img/camilo.jpg" class="card-img-top" alt="Card de Artista 2">
+                <div class="card-body pb-4 mb-2 ms-1">
+                  <h3 class="card-title mt-3 ms-4">Camilo</h3>
+                  <p class="card-text ms-4 mb-2">De Adentro pa Afuera</p>
+                  <p class="card-text ms-4">13/01/2023</p>
+                  <div class="d-flex">
+                    <a class="btn btn-outline-success rounded-pill px-4 ms-3 me-5 d-sm-block" href="evento.html" role="button">Ver más</a>
+                    <i class="fa-solid fa-share-from-square me-3 icon2 mt-2"></i>
+                    <i class="fa-solid fa-heart icon2 mt-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-4 mx-auto princing my-md-0 mb-5">
+              <div class="card h-100 price border border-white">
+                <img src="assets/img/luis-fonsi.jpg" class="card-img-top" alt="Card de Artista 3">
+                <div class="card-body pb-4 mb-2 ms-1">
+                  <h3 class="card-title mt-3 ms-4">Luis Fonsi</h3>
+                  <p class="card-text ms-4 mb-2">Noche Perfecta</p>
+                  <p class="card-text ms-4">14/01/2023</p>
+                  <div class="d-flex">
+                    <a class="btn btn-outline-success rounded-pill px-4 ms-3 me-5 d-sm-block" href="evento.html" role="button">Ver más</a>
+                    <i class="fa-solid fa-share-from-square me-3 icon2 mt-2"></i>
+                    <i class="fa-solid fa-heart icon2 mt-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-lg-3 col-sm-6 col-md-4 mx-auto princing my-md-0 mb-5">
+              <div class="card h-100 price border border-white">
+                <img src="assets/img/pipe-pelaez.jpg" class="card-img-top" alt="Card de Artista 3">
+                <div class="card-body pb-4 mb-2 ms-1">
+                  <h3 class="card-title mt-3 ms-4">Pipe Pelaez</h3>
+                  <p class="card-text ms-4 mb-2">Grandes Éxitos</p>
+                  <p class="card-text ms-4">16/01/2023</p>
+                  <div class="d-flex">
+                    <a class="btn btn-outline-success rounded-pill px-4 ms-3 me-5 d-sm-block" href="evento.html" role="button">Ver más</a>
+                    <i class="fa-solid fa-share-from-square me-3 icon2 mt-2"></i>
+                    <i class="fa-solid fa-heart icon2 mt-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-4 mx-auto princing my-md-0 mb-5">
+              <div class="card h-100 price border border-white">
+                <img src="assets/img/miriam-hernandez.jpg" class="card-img-top" alt="Card de Artista 3">
+                <div class="card-body pb-4 mb-2 ms-1">
+                  <h3 class="card-title mt-3 ms-4">Miriam Hernández</h3>
+                  <p class="card-text ms-4 mb-2">Mi Paraíso</p>
+                  <p class="card-text ms-4">15/01/2023</p>
+                  <div class="d-flex">
+                    <a class="btn btn-outline-success rounded-pill px-4 ms-3 me-5 d-sm-block" href="evento.html" role="button">Ver más</a>
+                    <i class="fa-solid fa-share-from-square me-3 icon2 mt-2"></i>
+                    <i class="fa-solid fa-heart icon2 mt-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-4 mx-auto princing my-md-0 mb-5">
+              <div class="card h-100 price border border-white">
+                <img src="assets/img/denise-rosenthal.jpg" class="card-img-top" alt="Card de Artista 3">
+                <div class="card-body pb-4 mb-2 ms-1">
+                  <h3 class="card-title mt-3 ms-4">Denise Rosenthal</h3>
+                  <p class="card-text ms-4 mb-2">Gira 2023</p>
+                  <p class="card-text ms-4">17/01/2023</p>
+                  <div class="d-flex">
+                    <a class="btn btn-outline-success rounded-pill px-4 ms-3 me-5 d-sm-block" href="evento.html" role="button">Ver más</a>
+                    <i class="fa-solid fa-share-from-square me-3 icon2 mt-2"></i>
+                    <i class="fa-solid fa-heart icon2 mt-2"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div class="page-header container d-flex justify-content-center pt-5">
+  <ul class="pagination">
+    <li><a href="#" class="text-decoration-none m-1">«</a></li>
+    <li><a href="#" class="active text-decoration-none m-1">1</a></li>
+    <li><a href="#" class="number text-decoration-none m-1">2</a></li>
+    <li><a href="#" class="number text-decoration-none m-1">3</a></li>
+    <li><a href="#" class="number text-decoration-none m-1">4</a></li>
+    <li><a href="#" class="number text-decoration-none m-1">»</a></li>
+  </ul> 
+</div>
+      </section>
+      <section class="login-modal my-5">
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12 d-flex justify-content-center">
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg p-0 border-0">
+          <div class="modal-content m-0 border-0">
+            <div class="modal-body bg-dark p-0 m-0 border-0">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="assets/img/logo-topticket.png" alt="Logo Topticket" class="img-fluid">
+                  </div>
+                  <div class="col-md-6 ventana-modal p-3">
+                        <div class="container">
+                          <div class="row justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>  
+                          </div>
+                          <div class="row ps-2">
+                            <div class="col-md-12 text-center">
+                              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                              <a href=""><i class="fa-brands fa-instagram"></i></a>
+                              <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                          </div>
+                          <div class="row ps-2">
+                            <div class="col-md-12">
+                              <h2 class="text-center">Ingresar</h2>
+                            </div>
+                          </div>
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 d-flex justify-content-center">
+                          <form class="m-2 mb-5">
+                            <input type="email" placeholder="Correo Electrónico" class="mt-3 pe-3 ps-2 py-1">
+                            <input type="password" placeholder="Contraseña" class="mt-3 pe-3 ps-2 py-1">
+                            <input type="submit" value="Submit" class="mt-3 rounded-pill px-4">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+    </main>
+    <footer class="py-5">
+      <div class="container">
+          <div class="row justify-content-center pb-5">
+              <h2 class="text-center pb-3">Colaboran</h2>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                  <img src="assets/img/vmove.png" alt="Vmove" class="img-fluid p-2">
+                  <img src="assets/img/pf.png" alt="Pf" class="img-fluid p-2">
+                  <img src="assets/img/hites.png" alt="Hites" class="img-fluid p-2">
+              </div>
+          </div>
+          <div class="row border-top border-1 pt-5">
+              <ul class="col-md-5 d-flex justify-content-around align-items-center pb-md-0 pb-4">
+                  <li><a href="">consultas@topticket.cl</a></li>
+                  <li><a href="">600 424 00 00</a></li>
+                  <li><a href="">Preguntas Frecuentes</a></li>
+              </ul>
+              <div class="col-md-2 col-12 d-flex justify-content-center">
+                <a href="index.html"><img src="assets/img/logo-topticket.png" alt="Logo top ticket" class="img-fluid"></a>
+              </div>
+              <ul class="col-md-5 d-flex justify-content-around align-items-center pt-md-0 pt-5">
+                  <li><a href="">¿Dónde Comprar?</a></li>
+                  <li><a href="">Términos y Condiciones</a></li>
+                  <li><a href="">Sobre Topticket</a></li>
+              </ul>
+          </div>
+          <div class="row justify-content-center pt-3">
+                  <div class="col-md-2 d-flex justify-content-around">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+          </div>
+      </div>
+  </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tickets para Mónica Naranjo, Mimética Tour</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0427636690.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="div-nav container-fluid d-flex">
+        <ul class="container d-flex justify-content-end align-items-center my-0 py-2">
+          <li>
+            <a class="text-uppercase text-white mx-2 text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresar
+              <i class="fa-solid fa-user mx-1"></i>
+            </a>
+          </li>
+          <li class="me-5">
+            <a class="text-white" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid navegacion">
+            <div class="container d-flex justify-content-center">
+              <a class="navbar-brand ms-5" href="index.html">
+                <img src="assets/img/logo-topticket.png" alt="Logo de topticket">
+              </a>
+              <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse container" id="navbarTogglerDemo02">
+                <form class="d-flex mx-auto" role="search">
+                  <input class="form-control mx-3 pe-5 ps-3 rounded-pill" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success px-4 rounded-pill" type="submit">Buscar</button>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase me-4" aria-current="page" href="#">Música</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase me-4" href="#">Teatro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase me-4" href="#">Humor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase me-4" href="#">Deporte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase" href="#">Ferias</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+  <main>
+  <section class="container-fluid sec-1">
+    <div class="container d-md-block d-none">
+        <div class="row align-items-center altura-row">
+            <div class="col-md-4">
+                <h1 class="my-0">Mónica Naranjo</h1>
+                <h2 class="my-0">Mimética Tour</h2>
+                <ul class="px-0 mt-3">
+                    <li><i class="fa-solid fa-calendar-days"></i>Fecha: 12/12/2022</li>
+                    <li><i class="fa-solid fa-clock pe-2"></i>Hora: 20:00 hrs.</li>
+                    <li><i class="fa-solid fa-location-dot"></i>Lugar: Teatro Caupolicán</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="sec-1-2 py-5 py-md-0">
+    <div class="container d-md-none d-block">
+      <div class="row">
+          <div class="col-6">
+              <h2 class="m-0"><span>Mónica Naranjo</span></h2>
+              <h2 class="m-0">Mimética Tour</h2>
+              <ul class="px-0">
+                  <li><i class="fa-solid fa-calendar-days"></i> Fecha: 12/12/2022</li>
+                  <li><i class="fa-solid fa-clock me-1"></i> Hora: 20:00 hrs.</li>
+                  <li><i class="fa-solid fa-location-dot"></i> Lugar: Teatro Caupolicán</li>
+              </ul>
+          </div>
+      </div>
+    </div>
+</section>
+  <section class="container sec-2">
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-6 pt-md-5">
+                <h2 class="my-md-4 mt-4 text-md-start text-center">Mapa de Asientos</h2>
+                <div class="container asientos pt-4">
+                    <div class="row">
+                        <div class="col m-1 bg-dark text-light d-flex align-items-center justify-content-center escenario">
+                            <h3>Escenario</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-1 gris" id="primeras-filas">
+                            <p>Primeras Filas</p>                       
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-1 gris" id="platea-lateral-sur">
+                            <p>Platea Lateral Sur</p>
+                        </div>
+                        <div class="col px-0">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col m-1 gris" id="platinum">
+                                        <p>Platinum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col m-1 gris" id="general-sur">
+                                        <p>General Sur</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col px-0">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col m-1" id="diamante">
+                                        <p>Diamante</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col m-1 gris" id="general">
+                                        <p>General</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col px-0">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col m-1 gris" id="golden">
+                                        <p>Golden</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col m-1 gris" id="general-norte">
+                                        <p>General Norte</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col m-1 gris" id="platea-lateral-norte">
+                            <p>Platea Lateral Norte</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-1 gris" id="galeria">
+                            <p>Galería</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 asientos-checkbox">
+              <h2 class="text-center mt-md-5 pt-md-4 mt-5">Seleccione sus asientos</h2>
+              <div class="concert w-100 m-auto">
+                <h4 class="text-center pb-4"><i class="fa-solid fa-circle"></i> Diamante</h4>
+                  <ol class="cabin">
+                    <li class="row">
+                      <ol class="seats d-flex justify-content-center align-items-center" type="A">
+                        <li class="seat">
+                          <input type="checkbox" id="1A">
+                          <label for="1A">1A</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="1B">
+                          <label for="1B">1B</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="1C">
+                          <label for="1C">1C</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" disabled id="1D">
+                          <label for="1D">Occupied</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="1E">
+                          <label for="1E">1E</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="1F">
+                          <label for="1F">1F</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="1G">
+                          <label for="1G">5G</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="1H">
+                          <label for="1H">5H</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="1I">
+                          <label for="1I">5I</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="1J">
+                          <label for="5J">1J</label>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="row row--2">
+                      <ol class="seats d-flex justify-content-center align-items-center" type="A">
+                        <li class="seat">
+                          <input type="checkbox" id="2A">
+                          <label for="2A">2A</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2B">
+                          <label for="2B">2B</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2C">
+                          <label for="2C">2C</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2D">
+                          <label for="2D">2D</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2E">
+                          <label for="2E">2E</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2F">
+                          <label for="2F">2F</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2G">
+                          <label for="2G">5G</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2H">
+                          <label for="2H">5H</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2I">
+                          <label for="2I">5I</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="2J">
+                          <label for="2J">5J</label>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="row row--3">
+                      <ol class="seats d-flex justify-content-center align-items-center" type="A">
+                        <li class="seat">
+                          <input type="checkbox" id="3A">
+                          <label for="3A">3A</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3B">
+                          <label for="3B">3B</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3C">
+                          <label for="3C">3C</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3D">
+                          <label for="3D">3D</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3E">
+                          <label for="3E">3E</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3F">
+                          <label for="3F">3F</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3G">
+                          <label for="3G">5G</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3H">
+                          <label for="3H">5H</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3I">
+                          <label for="3I">5I</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="3J">
+                          <label for="3J">5J</label>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="row row--4">
+                      <ol class="seats d-flex justify-content-center align-items-center" type="A">
+                        <li class="seat">
+                          <input type="checkbox" id="4A">
+                          <label for="4A">4A</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4B">
+                          <label for="4B">4B</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4C">
+                          <label for="4C">4C</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4D">
+                          <label for="4D">4D</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4E">
+                          <label for="4E">4E</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4F">
+                          <label for="4F">4F</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4G">
+                          <label for="4G">5G</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4H">
+                          <label for="4H">5H</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4I">
+                          <label for="4I">5I</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="4J">
+                          <label for="4J">5J</label>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="row row--5">
+                      <ol class="seats d-flex justify-content-center align-items-center" type="A">
+                        <li class="seat">
+                          <input type="checkbox" id="5A">
+                          <label for="5A">5A</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5B">
+                          <label for="5B">5B</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5C">
+                          <label for="5C">5C</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5D">
+                          <label for="5D">5D</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5E">
+                          <label for="5E">5E</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5F">
+                          <label for="5F">5F</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5G">
+                          <label for="5G">5G</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5H">
+                          <label for="5H">5H</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5I">
+                          <label for="5I">5I</label>
+                        </li>
+                        <li class="seat">
+                          <input type="checkbox" id="5J">
+                          <label for="5J">5J</label>
+                        </li>
+                      </ol>
+                    </li>
+                    </ol>
+                </div>
+          </div>
+        </div>
+    </section>
+    <section>
+        <div class="container resumen">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <h2 class="text-center mt-4 mb-4">Resumen</h2>
+                        <div class="container col-md-9">
+                            <div class="row">
+                                <div class="col-md-3 w-25 px-0 bg-tabla">
+                                    <h4 class="text-center py-2">E-Ticket</h4>
+                                    <p class="text-center pt-2">Diamante</p>
+                                    <p class="text-center pt-3">Diamante</p>
+                                </div>
+                                <div class="col-md-3 w-25 px-0 bg-tabla">
+                                    <h4 class="text-center py-2">Precio</h4>
+                                    <p class="text-center pt-2">$80.000</p>
+                                    <p class="text-center pt-3">$80.000</p>
+                                </div>
+                                <div class="col-md-3 w-25 px-0 bg-tabla">
+                                    <h4 class="text-center py-2">Asiento</h4>
+                                    <p class="text-center pt-2">2E</p>
+                                    <p class="text-center pt-3">2F</p>
+                                </div>
+                                <div class="col-md-3 w-25 px-0 bg-tabla">
+                                    <h4 class="text-center py-2">Cantidad</h4>
+                                    <p class="text-center pt-2">1</p>
+                                    <p class="text-center pt-3">1</p>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-md-12 my-4">
+                                  <h3>Total:</h3>
+                                  <h3><span>$160.000</span></h3>
+                                </div>
+                              <div class="row d-flex justify-content-center mb-md-5 pbmd--5">
+                                <div class="col-md-12">
+                                  <a href="" class="rounded-pill px-5 py-2 ms-4">Volver</a>
+                                  <a class="rounded-pill px-3 py-2 ms-4" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Agregar al carro</a>
+                                </div>
+                              </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- MODAL -->
+    <section class="login-modal my-5">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg p-0 border-0">
+        <div class="modal-content m-0 border-0">
+          <div class="modal-body bg-dark p-0 m-0 border-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                  <img src="assets/img/logo-topticket.png" alt="Logo Topticket" class="img-fluid">
+                </div>
+                <div class="col-md-6 ventana-modal p-3">
+                      <div class="container">
+                        <div class="row justify-content-end">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>  
+                        </div>
+                        <div class="row ps-2">
+                          <div class="col-md-12 text-center">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                          </div>
+                        </div>
+                        <div class="row ps-2">
+                          <div class="col-md-12">
+                            <h2 class="text-center">Ingresar</h2>
+                          </div>
+                        </div>
+                    <div class="row d-flex justify-content-center">
+                      <div class="col-md-6 d-flex justify-content-center">
+                        <form class="m-2 mb-5">
+                          <input type="email" placeholder="Correo Electrónico" class="mt-3 pe-3 ps-2 py-1">
+                          <input type="password" placeholder="Contraseña" class="mt-3 pe-3 ps-2 py-1">
+                          <input type="submit" value="Submit" class="mt-3 rounded-pill px-4">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- OFFCANVA -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="d-flex justify-content-end me-4 my-3">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-header container d-flex justify-content-around w-100 mx-0 px-0">
+    <h3 class="offcanvas-title" id="offcanvasExampleLabel">Tu carrito <i class="fa-solid fa-cart-shopping"></i></h3>
+    <div class="rounded-circle">
+      <p class="text-center mx-auto mt-1 mx-0 px-0">2</p>
+    </div>
+    <a class="btn btn-outline-success1 rounded-pill px-4 py-2 me-3" href="#" role="button">Vaciar carrito</a>
+    
+  </div>
+  <div class="offcanvas-body mx-auto">
+    <div class="container pt-4 px-4 encabezado">
+      <div class="row">
+        <div class="col-6">
+          <h3>Mónica Naranjo</h3>
+          <span>Mimética Tour</span>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-calendar-days me-3"></i>
+              </div>
+              <div>
+                <p>12/12/2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-clock me-3"></i>
+              </div>
+              <div>
+                <p>20:00 hrs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="d-flex">
+              <div>
+                <i class="fa-solid fa-location-dot me-3"></i>
+              </div>
+              <div>
+                <p>Teatro Caupolián</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row border border-white h-100">
+        <div class="col d-flex justify-content-around align-items-center borde-start">
+          <div>
+            <span>1</span>
+          </div>
+          <div>
+            <h4 class="ms-4">Diamante / Asiento 2E</h4>
+            <ul class="pe-3">
+            <li>E-Ticket: $70.000</li>
+            <li>Cargo Servicio: $10.000</li>
+            <li>Total: $80.000</li>
+            </ul>
+          </div>
+          <div>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row card-b">
+        <div class="col d-flex justify-content-around align-items-center px-4 borde-start borde-start1">
+          <div>
+            <span>1</span>
+          </div>
+          <div>
+            <h4 class="ms-4">Diamante / Asiento 2F</h4>
+            <ul class="me-5">
+              <li>E-Ticket: $70.000</li>
+            <li>Cargo Servicio: $10.000</li>
+            <li>Total: $80.000</li>
+            </ul>
+          </div>
+          <div>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="mx-auto">
+    <p class="ms-3">Total :</p>
+    <span>$160.000</span>
+  </div>
+  <div class="d-flex justify-content-evenly">
+    <div class="text-start d-flex justify-content-center mt-5"><a class="btn btn-outline-success1 rounded-pill px-4 py-2 mb-5" href="#" role="button">Seguir Comprando</a></div>
+    <div class="text-start d-flex justify-content-center mt-5"><a class="btn btn-outline-success1 rounded-pill px-4 py-2 mb-5" href="validacion.html" role="button">Ir a Pagar</a></div>
+  </div>
+</div>
+</main>
+    <footer class="py-5">
+      <div class="container">
+          <div class="row justify-content-center pb-5">
+              <h2 class="text-center pb-3">Colaboran</h2>
+              <div class="col-md-4 col-12 d-flex justify-content-center">
+                  <img src="assets/img/vmove.png" alt="Vmove" class="img-fluid p-2">
+                  <img src="assets/img/pf.png" alt="Pf" class="img-fluid p-2">
+                  <img src="assets/img/hites.png" alt="Hites" class="img-fluid p-2">
+              </div>
+          </div>
+          <div class="row border-top border-1 pt-5">
+              <ul class="col-md-5 d-flex justify-content-around align-items-center pb-md-0 pb-4">
+                  <li><a href="">consultas@topticket.cl</a></li>
+                  <li><a href="">600 424 00 00</a></li>
+                  <li><a href="">Preguntas Frecuentes</a></li>
+              </ul>
+              <div class="col-md-2 col-12 d-flex justify-content-center">
+                <a href="index.html"><img src="assets/img/logo-topticket.png" alt="Logo top ticket" class="img-fluid"></a>
+              </div>
+              <ul class="col-md-5 d-flex justify-content-around align-items-center pt-md-0 pt-5">
+                  <li><a href="">¿Dónde Comprar?</a></li>
+                  <li><a href="">Términos y Condiciones</a></li>
+                  <li><a href="">Sobre Topticket</a></li>
+              </ul>
+          </div>
+          <div class="row justify-content-center pt-3">
+                  <div class="col-md-2 d-flex justify-content-around">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+          </div>
+      </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

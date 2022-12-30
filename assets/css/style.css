@@ -389,6 +389,8 @@ body {
     .sec-2 .precios .boton-1 a:hover {
       background-color: #000000; }
 
+.resumen .btn-h {
+  height: 10vh; }
 .resumen .bg-tabla {
   background-color: #F1F1F1; }
 .resumen .bg-tabla :last-child {
@@ -429,6 +431,10 @@ body {
     list-style: none;
     padding: 0;
     margin: 0; }
+  @media only screen and (max-width: 600px) {
+    .asientos-checkbox .ol-box {
+      padding-left: 20%;
+      padding-right: 20%; } }
   .asientos-checkbox .seats {
     display: flex;
     flex-direction: row;
@@ -465,7 +471,7 @@ body {
       position: relative;
       width: 100%;
       text-align: center;
-      font-size: 14px;
+      font-size: 100%;
       font-weight: bold;
       line-height: 1.5rem;
       padding: 4px 0;
@@ -554,5 +560,9 @@ footer {
   footer .iconos {
     width: 30%;
     background-color: red; }
+  @media only screen and (max-width: 400px) {
+    footer ul {
+      display: flex;
+      flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */

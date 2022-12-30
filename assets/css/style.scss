@@ -566,6 +566,9 @@ body{
     
 }
 .resumen{
+    .btn-h{
+        height: 10vh;
+    }
     .bg-tabla{
         background-color: $color-4;
     }
@@ -615,6 +618,12 @@ body{
         padding: 0;
         margin: 0;
       }
+      @media only screen and (max-width: 600px){
+        .ol-box{
+            padding-left: 20%;
+            padding-right: 20%;
+          }
+      }
       .seats {
         display: flex;
         flex-direction: row;
@@ -626,7 +635,6 @@ body{
         flex: 0 0 14.28571428571429%;
         padding: 5px;
         position: relative;  
-        
         input[type=checkbox] {
           position: absolute;
           opacity: 0;
@@ -662,7 +670,7 @@ body{
           position: relative;    
           width: 100%;    
           text-align: center;
-          font-size: 14px;
+          font-size: $size-1;
           font-weight: bold;
           line-height: 1.5rem;
           padding: 4px 0;
@@ -787,6 +795,12 @@ footer{
         width: 30%;
         background-color: red;
     }
+    @media only screen and (max-width: 400px){
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+      }
 }
 
 

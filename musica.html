@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body>
+  <body class="fade-in">
     <!-- navegador  -->
     <header>
       <div class="div-nav container-fluid d-flex">
@@ -88,11 +88,11 @@
       <!-- Sección Música -->
       <section class="musica">
         <div class="container mt-5">
-          <div class="container d-flex justify-content-center mb-5">
-          <nav class="navbar navbar-expand-lg bg-light w-50 justify-content-center barra">
+          <div class="container d-flex justify-content-center mb-5 ">
+          <nav class="navbar navbar-expand-lg bg-light w-50 justify-content-center barra d-md-block d-none">
             <div class="row">
-              <div class="w-100 d-md-flex align-items-center">
-                <a class="nav-link disabled ms-2 me-3" href="#">Filtrar por</a>
+              <div class="w-100 d-md-flex align-items-center text-center">
+                <a class="nav-link disabled ms-2 me-3 ps-5" href="#">Filtrar por</a>
                   <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -146,6 +146,62 @@
               </div>
             </div>
           </nav>
+          <nav class="navbar navbar-dark navbar-expand-lg justify-content-center d-md-none d-block w-50 barra-2">
+            <div class="d-flex">
+            <a class="navbar-brand w-100" href="#">Filtrar por</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse w-100" id="navbarNavDropdown">
+              <ul class="navbar-nav d-flex">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-2 me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Fecha
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Enero</a></li>
+                    <li><a class="dropdown-item" href="#">Febrero</a></li>
+                    <li><a class="dropdown-item" href="#">Marzo</a></li>
+                    <li><a class="dropdown-item" href="#">Abril</a></li>
+                    <li><a class="dropdown-item" href="#">Mayo</a></li>
+                    <li><a class="dropdown-item" href="#">Junio</a></li>
+                    <li><a class="dropdown-item" href="#">Julio</a></li>
+                    <li><a class="dropdown-item" href="#">Agosto</a></li>
+                    <li><a class="dropdown-item" href="#">Septiembre</a></li>
+                    <li><a class="dropdown-item" href="#">Octubre</a></li>
+                    <li><a class="dropdown-item" href="#">Noviembre</a></li>
+                    <li><a class="dropdown-item" href="#">Diciembre</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-2 me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Precio
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">$200.000 a más</a></li>
+                    <li><a class="dropdown-item" href="#">$100.000 a $200.000</a></li>
+                    <li><a class="dropdown-item" href="#">$50.000 a $100.000</a></li>
+                    <li><a class="dropdown-item" href="#">$10.000 a $50.000</a></li>
+                    <li><a class="dropdown-item" href="#">$10.000 a menos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle ms-2 me-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Lugar
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Santiago de Chile</a></li>
+                    <li><a class="dropdown-item" href="#">Valparaíso</a></li>
+                    <li><a class="dropdown-item" href="#">Concepción</a></li>
+                    <li><a class="dropdown-item" href="#">Rancagua</a></li>
+                    <li><a class="dropdown-item" href="#">Antofagasta</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          
         </div>
           <div class="row mb-2 mb-md-5">
             <div class="col-lg-3 col-sm-6 col-md-4 mx-auto princing my-md-0 mb-5">

@@ -565,4 +565,18 @@ footer {
       display: flex;
       flex-direction: column; } }
 
-/*# sourceMappingURL=style.css.map */
+/* Establece inicialmente la opacidad a 0 */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+}
+
+/* Define la animación */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
